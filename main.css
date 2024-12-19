@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .container{
     background-image: url(https://www.w3schools.com/w3images/photographer.jpg);
@@ -60,80 +61,88 @@ a{
     text-decoration: none;
     color: black;
 }
-.main-image-container-1{
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
+img{
+    width: 100%;
 }
-.main-image-container-2{
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
-}
-.main-image-container-3{
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
-}
-.main-image-container-4{
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
-}
-.main-image-container-5{
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
-    
-}
-.footer{
-   border: 2px solid;
-   width: 1000px;
-   font-size: 18px;
-   background-color: lightgray;
-   text-align: center;
-   margin-top: 24px;
-  
-   
-}
-#form{
-    height: 50px;
-    width: 900px;
+.container-2{
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.item{
    
+    margin-top: 24px;
+   /* border: 1px solid; */
+   width: 1000px;
 }
-h2{
-    display: flex;
-    align-items: start;
+
+.footer-container{
+   display: flex;
+   justify-content: center;
 }
-#submit{
-    height: 50px;
-    width: 900px;
-    margin-top: 30px;
-    background-color: darkgrey;
+#contact{
+    max-width:950px ;
+    height: auto;
+    color: #000 ;
+    background-color: #f1f1f1 ;
+    padding: 12px 24px;
+    padding-top:32px ;
+    padding-bottom: 32px;
+    margin-top: 16px;
+    box-sizing: inherit; 
 }
-#submit:hover{
-    background-color:lightgray;
-    color: white;  
+#contact>h3{
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+    box-sizing: inherit;
 }
-.contact{
-    font-size: 32px;
-    margin-top: 20px;
+hr{
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+    box-sizing: content-box;
+  height: 0;
 }
-p{
-    margin-top: 20px;
-    margin-right:85% ;
+.message{
+    margin: 16px 0px;
+    box-sizing: inherit;
 }
-.para-3{
-    margin-top: 20px;
+.type{
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    box-sizing: inherit;
+    font: inherit;
+    overflow: visible;
+}
+.send{
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #616161;
+    text-align: center;
+    border: none;
+    padding: 8px 16px;
+    text-transform: none;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.send:hover{
+    background-color: grey;
+    color: #000;
 }
 .w3{
-    padding: 10px;
-    text-align: start;
-    margin-top: 40px;
+    color: #000;
+    transition: 0.4s ease;
+}
+.w3:hover{
+    color: green;
 }
 @media screen and (min-width : 990px) {
     .subcontainer-1{
@@ -156,16 +165,28 @@ p{
 }
 @media screen and (max-width : 600px) {
     .nav{
-        padding: 30px;
+        padding: 50px;
+        width: 375px;
+        gap: 60px;
+    }
+    .container{
+        width: 375px;
     }
 }
-@media screen and (max-width : 600px){
-    .footer,#form,#submit{
-        width: 90%;
+   .item{
+      width: 350px;
     }
-    .main-image-container-1,.main-image-container-2,.main-image-container-3,.main-image-container-4,.main-image-container-5{
-        width: 20%;
+    .footer{
+        width: 500px;
     }
+
+@media screen and (min-width : 601px) and (max-width : 990px){
+   .container{
+    width: 990px;
+   }
+   .item{
+    width: 700px;
+   }
 }
 
 
